@@ -27,6 +27,10 @@
 .bg-linear {
   background-image: linear-gradient(to top, rgb(119, 119, 119), #494949);
 }
+
+.carousel-inner{
+  top: 4rem;
+}
 .carousel-text a {
   text-decoration: none;
 }
@@ -163,6 +167,11 @@
   }
 }
 /* end keyframe */
+
+.col-sm-12 h5{
+  font-size:18px;
+  font-weight: 400;
+}
 
 .bg-linear {
   background-image: linear-gradient(to top, rgb(119, 119, 119), #494949);
@@ -593,7 +602,7 @@ footer {
 @media (max-width: 1440px) {
   .carousel-bg2-text {
     top: 40%;
-    right: 5rem;
+    right: 0rem;
     /* margin-right: calc(90% - 1200px / 2); */
   }
   .carousel-bg2-text h1 {
@@ -624,14 +633,14 @@ footer {
 @media (max-width: 1024px) {
   .carousel-bg2-text {
     top: 40%;
-    right: 5rem;
+    right: 11rem;
     /* margin-right: calc(90% - 1200px / 2); */
   }
   .carousel-bg2-text h1 {
-    font-size: 50px;
+    font-size: 35px;
   }
   .carousel-bg2-text h3 {
-    font-size: 30px;
+    font-size: 24px;
   }
   .carousel-text-more {
     font-size: 18px;
@@ -736,13 +745,16 @@ footer {
   .navbar .container .collapse .navbar-nav .nav-item:nth-child(5) {
     margin-left: 0rem;
   }
+  .carousel-inner{
+    top: 3rem;
+  }
   .carousel-text a h5 {
     font-size: 16px;
     margin: 0 auto;
   }
   .carousel-bg2-text {
     top: 40%;
-    right: 20rem;
+    right: 18rem;
     /* margin-right: calc(90% - 1200px / 2); */
   }
   .carousel-bg2-text h1 {
@@ -993,6 +1005,10 @@ footer {
 }
 
 @media (max-width: 425px) {
+  .carousel-control-next, .carousel-control-prev {
+    top: 100px;
+    width:16px;
+  }
   .col-sm-12 h1 {
     font-size: 24px;
   }
@@ -1113,7 +1129,8 @@ footer {
 
   .col-sm-9 {
     flex: 0 0 auto;
-    width: 100%;
+    width: 96%;
+    margin-top: 3rem;
   }
   .col-sm-10 {
     flex: 0 0 auto;
@@ -1124,10 +1141,10 @@ footer {
     height: 15rem;
   }
   .w-66 {
-    width: 25rem;
+    width: 24rem;
   }
   .w-80 {
-    width: 100%;
+    width: 97%;
   }
 
   .content-5 .row {
@@ -1166,13 +1183,6 @@ footer {
     margin-left: 20px;
   }
 
-  .bi-facebook,
-  .bi-instagram,
-  .bi-youtube {
-    width: 20px;
-    height: 20px;
-  }
-
   .footer-body {
     padding: 50px 10px 10px 10px;
     font-size: 10px;
@@ -1184,5 +1194,230 @@ footer {
   }
   .content-modal button {
     font-size: 12px;
+  }
+
+  .bi-geo-alt-fill,.bi-telephone-fill,.bi-envelope-fill,.bi-facebook,.bi-instagram,.bi-youtube{
+    width: 18px;
+    height: 18px;
+  }
+  
+
+}
+@media (max-width: 375px) {
+  .carousel-bg2-text {
+    top: 40%;
+    right: 27rem;
+  }
+  .carousel-bg2-text h1 {
+    font-size: 14px;
+  }
+  .carousel-bg2-text h3 {
+    font-size: 10px;
+  }
+  .carousel .carouselIndicators a {
+    font-size: 10px;
+  }
+  .carouselIndicators {
+    bottom: -140px;
+  }
+  .w-80 {
+    width: 100%;
+  }
+  .w-66 {
+    width: 21.7rem;
+  }
+  .col-sm-9 {
+    width: 99%;
+  }
+  .content-5 .row .col-sm-3 a img {
+    width: 4.3rem;
+  }
+  .img-overlay {
+    top: 6px;
+    left: 16px;
+  }
+  .img-overlay-5 {
+    width: 21.7rem;
+    height: 15rem;
+    top: 0;
+    left: 12px;
+  }
+  .col-sm-12 h1 {
+    font-size: 21px;
+  }
+  .col-sm-7{
+    width:99.333333%
+  }
+
+  .col-sm-7 a,
+  .col-sm-9 a{
+    font-size:10px
+  }
+  
+  .search-field input,.search-field button{
+    font-size:12px ;
+  }
+}
+@media (max-width: 320px) {
+
+  .carousel-text-more {
+    font-size: 8px;
+    margin-left: 42%;
+    padding: 2px 8px;
+  }
+  .detail .fs-3,.detail .fs-2{
+    font-size: 18px !important;
+  }
+  .detail h3{
+    font-size: 12px;
+  }
+  .carousel .carouselIndicators a {
+    font-size: 8px;
+  }
+
+  .btn-item {
+    padding: 4px 4px;
+    font-size: 10px;
+  }
+  .p-2 {
+    padding: 0.4rem!important;
+  }
+  .carousel-bg2-text {
+    top: 40%;
+    right: 28.5rem;
+  }
+  .carousel-bg2-text h1 {
+    font-size: 12px;
+  }
+  .carousel-bg2-text h3 {
+    font-size: 8px;
+    margin-bottom: 3px !important;
+  }
+  .w-80 {
+    width: 100%;
+  }
+  .w-66 {
+    width: 21.7rem;
+  }
+  .col-sm-9 {
+    width: 99%;
+  }
+  .content-5 .row .col-sm-3 a img {
+    width: 3.8rem;
+  }
+  .img-overlay {
+    top: 6px;
+    left: 19px;
+    width: 8rem;
+    height: 13rem;
+    font-size: 9px;
+  }
+  .img-overlay-2 {
+    width: 7rem;
+    height: 3.98rem;
+  }
+  .img-overlay-3, .img-overlay-4 {
+    width: 10rem;
+    height: 5.6rem;
+  }
+  .img-overlay-3, .img-overlay-4 {
+    width: 7rem;
+    height: 3.92rem;
+  }
+  .img-overlay-2, .img-overlay-3, .img-overlay-4 {
+    top: 0;
+    left: 10px;
+    font-size: 8px;
+  }
+  .img-overlay-2 .mt-3,.img-overlay-3 .mt-3,.img-overlay-4 .mt-3{
+    margin-top: 5px!important;
+  }
+  .bg-item .image .bi-bag-plus{
+    width:10px;
+  }
+  .h-40 {
+    height: 15.5rem;
+  }
+  .w-24 {
+    width: 8.5rem;
+  }
+  .bg-item {
+    margin-left: -22px;
+  }
+  .w-22 {
+    width: 8.5rem;
+  }
+  .w-66 {
+    width: 18.4rem;
+  }
+  .col-sm-10 .h-40 {
+    height: 11rem;
+}
+  .text-pre-order {
+    font-size: 7px;
+  }
+  .col-sm-7 {
+    width: 98.333333%;
+  }
+  .col-sm-7 a,
+  .col-sm-9 a{
+    font-size:10px
+  }
+  .content-modal {
+    padding: 20px;
+    width: 80%;
+    font-size: 10px;
+  }
+  .content-modal button {
+    font-size: 8px;
+    padding: 5px 5px;
+  }
+
+  .search-field input,.search-field button{
+    font-size:10px ;
+  }
+  .search-list-item {
+    font-size: 8px;
+  }
+  .footer-body {
+    font-size: 7px;
+  }
+  .cart_container .cart_title{
+    font-size:18px;
+  }
+  .no_item h5{
+    font-size:14px
+  }
+  .cart_button_clear, .cart_button_checkout {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  .cart_item {
+    padding: 15px 5px !important;
+    padding-right: 15px!important;
+  }
+  .cart_item_image {
+    width: 90px !important;
+  }
+  .cart_item_info {
+    width: calc(100% - 90px) !important;
+    float: left;
+    padding-top: 18px;
+  }
+  
+  .checkbox {
+    position: absolute;
+    top: 4rem;
+    left: 10px;
+  }
+  .form-check-input {
+    width: 15px!important;
+    height: 15px !important;
+  }
+  .order_total_title {
+    font-size: 12px !important;
+  }
+  .order_total_amount {
+    font-size: 16px !important;
   }
 }
